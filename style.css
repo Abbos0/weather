@@ -1,0 +1,145 @@
+.container{
+    background-image: url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 100%;
+    max-width: 400px;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+.weather{
+    background-image: url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap: 30px;
+    padding: 30px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    border: none;
+    outline: none;
+    border: 5px solid rgba(17, 211, 211, 0.663);
+    padding: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.search button{
+    padding: 5px;
+    cursor: pointer;
+}
+.show{
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.show h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+.show i{
+    font-size: 50px;
+}
+#clock{
+    /* position: absolute;
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 50%; */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 300;
+    height: 100px;
+    background-image: radial-gradient( rgba(0,255,255,0.292) 0%,rgba(0,255,255,0.224) 10%,transparent 40%,transparent 60%,transparent 80%,transparent 100%);
+}
+#clock #date{
+    color: #bcf4f4;
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 0px 0px 5px #85585c;
+    animation: date 3s linear infinite;
+}
+#clock #time{
+    color: #bcf4f4;
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: 0px 0px 5px #85585c;
+    animation: time 5s linear infinite;
+}
+@keyframes time {
+    0%{
+        color:aqua ;
+    }
+    20%{
+        color:rgb(31, 206, 206) ;
+    }
+    40%{
+        color:rgb(168, 203, 203) ;
+    }
+    60%{
+        color:rgb(81, 255, 0) ;
+    }
+    80%{
+        color:rgb(212, 100, 35) ;
+    }
+    100%{
+        color:rgb(255, 0, 174) ;
+    }
+}
+@keyframes date {
+    0%{
+        color:aqua ;
+    }
+    50%{
+        color:rgb(31, 206, 206) ;
+    }
+    100%{
+        color:rgb(0, 255, 21) ;
+    }
+}
+@media screen and (max-width:500px) {
+    #clock{
+        background-image: radial-gradient( rgba(0,255,255,0.292) 0%,rgba(0,255,255,0.224) 10%,transparent 40%,transparent 60%,transparent 80%,transparent 100%);
+    }
+    #clock #date{
+        color: #bcf4f4;
+        font-size: 15px;
+        font-weight: 300;
+        text-shadow: 0px 0px 5px #85585c;
+    }
+    #clock #time{
+        color: #bcf4f4;
+        font-size: 33px;
+        font-weight: 900;
+        text-shadow: 0px 0px 5px #85585c;
+    }
+    .box{
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+
