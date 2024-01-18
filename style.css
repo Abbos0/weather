@@ -59,6 +59,12 @@
 .show i{
     font-size: 50px;
 }
+.icon_weather{
+    font-size: 80px;
+}
+.description{
+    text-transform: capitalize;
+}
 #clock{
     /* position: absolute;
     transform: translate(-50%,-50%);
@@ -119,7 +125,7 @@
         color:rgb(0, 255, 21) ;
     }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:450px) {
     #clock{
         background-image: radial-gradient( rgba(0,255,255,0.292) 0%,rgba(0,255,255,0.224) 10%,transparent 40%,transparent 60%,transparent 80%,transparent 100%);
     }
@@ -140,6 +146,4 @@
         max-width: 300px;
     }
 }
-
-
 
